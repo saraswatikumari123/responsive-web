@@ -1,0 +1,115 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom right, #87ceeb, #ffffff); /* Sky blue and white gradient */
+  color: #333;
+}
+
+header {
+  background: #5dade2; /* Sky blue */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #3498db; /* Darker blue for contrast */
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+fieldset {
+  border: 1px solid #87ceeb; /* Sky blue border */
+  padding: 20px;
+  border-radius: 8px;
+  background: #f0f8ff; /* Light sky blue */
+}
+
+legend {
+  font-weight: bold;
+  color: #3498db; /* Bold sky blue */
+  text-transform: uppercase;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 2px solid #87ceeb; /* Sky blue */
+  border-radius: 8px;
+  background: #ffffff;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #3498db; /* Darker sky blue */
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+button {
+  padding: 12px 20px;
+  background: #3498db; /* Bold sky blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #21618c; /* Darker blue */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background: #5dade2; /* Sky blue */
+  color: white;
+  font-size: 1rem;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  main {
+    padding: 15px;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}

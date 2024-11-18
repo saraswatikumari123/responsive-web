@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Customer Satisfaction Survey</h1>
+    <p>Your Feedback Helps Us Improve!</p>
+  </header>
+
+  <main>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Your Age" min="1" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Feedback</legend>
+        <p>How would you rate our service?</p>
+        <label>
+          <input type="radio" name="rating" value="excellent" required> Excellent
+        </label>
+        <label>
+          <input type="radio" name="rating" value="good"> Good
+        </label>
+        <label>
+          <input type="radio" name="rating" value="average"> Average
+        </label>
+        <label>
+          <input type="radio" name="rating" value="poor"> Poor
+        </label>
+
+        <label for="suggestions">Any suggestions?</label>
+        <textarea id="suggestions" name="suggestions" rows="4" placeholder="Your comments"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label>
+          <input type="checkbox" name="subscribe" value="yes"> Subscribe to our newsletter
+        </label>
+        <label for="contact-method">Preferred contact method:</label>
+        <select id="contact-method" name="contact-method">
+          <option value="email">Email</option>
+          <option value="phone">Phone</option>
+          <option value="none">None</option>
+        </select>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Thank you for participating in our survey!</p>
+  </footer>
+</body>
+</html>
